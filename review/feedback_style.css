@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 237, 232);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article{
+    width:100%;
+    height:100%;
+    justify-content: center;
+    display:flex;
+    flex-flow:row wrap;
+    background-image: url(A2.jpg);
+    background-attachment:local;
+    background-size:round;
+    background-repeat:repeat-y;
+}
+
+form{
+    font-size:large;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+legend{
+    font-size: x-large;
+    color:rgb(242, 98, 177);
+    text-shadow: 2px 1px rgb(0, 0, 0);
+    font-weight: bold;
+    background-color:rgba(60, 42, 182, 0.94);
+    text-align:center;
+    border:5px double ivory;
+}
+
+h1.font{
+    font-style:italic;
+    font-weight: bold;
+    text-decoration: double;
+    text-shadow: 1px 1px rgb(43, 186, 226);
+    letter-spacing: 1px;
+    font-size:large;
+    margin: 2% 0%;
+    margin-bottom: -80%;
+}
+
+table{
+    width:100%;
+    margin:3% 0%;
+    border:1px black solid;
+    border-collapse: collapse;
+    justify-content:flex-start;
+    background-color:rgba(137, 154, 247, 0.493);
+}
+
+th{
+    text-align: left;
+    width:40%;
+    border:2px black solid;
+    text-shadow: 0.5px 0.5px rgb(0, 170, 255);
+    padding:3% 3%;
+}
+
+td{
+    font-size: smaller;
+    width:10%;
+    text-align: center;
+    border:2px black solid;
+    font-weight: bold;
+    background-color: rgba(0, 139, 139, 0.493);
+    padding:3% 3%;
+}
+
+#review{
+    width:100%;
+    color:aquamarine;
+    border:4px double rgb(145, 20, 228);
+    background-color: aliceblue;
+}
+
+article input{
+    font-size: large;
+    background-color:pink;
+    padding:5px;
+    margin:2%;
+    float:left;
+}
+
+#reviewtextbox{
+    font-size: large;
+    color:black;
+    width:95%;
+    height:50%;
+    border:4px double rgb(145, 20, 228);
+    background-color: aliceblue;
+    margin:3%;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+@import url(event.css);
+
+fieldset{
+    background-color: mediumseagreen;
+}
+
+#reserve{
+    border: 2px purple solid;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+#reserve:hover{
+    background-color: purple;
+}
+
+#reserve:active{
+    background-color: deeppink;
+}

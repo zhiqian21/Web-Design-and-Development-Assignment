@@ -1,0 +1,72 @@
+body {
+    backdrop-filter: blur(6px);
+    padding: 0 0;
+    margin: 0 0;
+}
+
+div.img-map {
+    background-color: rgb(241, 237, 232);
+    padding: 10px 0;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.western, .japanese, .dessert, .drinks {
+    position: relative;
+    width: 100%;
+}
+
+table td img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 75%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    height: 20%;
+    width: 100%;
+    opacity: 0.9;
+    animation: mymove 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes mymove {
+    from {top: 5px;}
+    to {bottom: 10px;}
+}
+
+.overlay#western {
+    background-color: #164e1fde;
+}
+
+.overlay#japanese {
+    background-color: #ac6d1bde;
+}
+
+.overlay#dessert {
+    background-color: #781717de;
+}
+
+.overlay#drinks {
+    background-color: #573386de;
+}
+
+.text {
+    color: white;
+    font-size: 1.5em;
+    padding-top: 10%;
+}
+
+.western:hover .overlay, .japanese:hover .overlay, .dessert:hover .overlay, .drinks:hover .overlay {
+    opacity: 1;
+}
+  

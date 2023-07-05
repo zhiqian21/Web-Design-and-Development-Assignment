@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-image: url('../home-page/front-cover.jpg');
+    backdrop-filter: blur(5px);
+}
+
+.cart-content {
+    color: white;
+}
+
+.foodCart{
+    display:flex;
+    margin:0 auto;
+    margin-top: 20px;
+    max-width: 700px;
+    align-items:center;
+    border-bottom:1px solid white;
+    color: white;
+}
+
+#total-total{
+padding-left: 300px;
+width:42.8%
+}
+
+#cartFinal{
+    padding-top:25px;
+    display:flex;
+}
+
+#clearCart{
+    font-size:12px;
+    border-radius:4px;
+    background-color: red;
+    color:white;
+    border-color:brown;
+    cursor:pointer;
+    height:50px;
+    width:70px;
+}
+
+
+.cart-content {
+    font-family:cursive;
+
+}
+
+
+#incre{
+    cursor:pointer;
+    padding-right: 5px;
+    color:green;
+
+}
+
+#removeButton{
+    color:red;
+    cursor:pointer;
+}
+
+#decre{
+    cursor:pointer;
+    padding-left:5px;
+    color:red;
+}
+
+.cart{
+    justify-content: center;
+    padding-left: 360px;
+    width:430px;
+    margin-left: 230px;
+    border-bottom: 1px solid white;
+    font-family: cursive;
+}
+.food-picture{
+    width:25%;
+    height:100px;
+}
+
+.descrip{
+    width:40%;
+}
+
+.food-price{
+    width:15%;
+}
+.quantity{
+    width:20%;
+}
+.foodTotal{
+    width:15%;
+}
+.removeItem{
+    padding-left:40px;
+}
+
+img{
+    margin-right:20px;
+    margin-left:20px;
+    position:relative;
+    overflow:hidden;
+    width:80px;
+    height:80px;
+}
+
+#cart-total{
+padding-right: 30px;
+color: white;
+}
+
+
+input {
+    font-size:12px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 192, 91);
+    border-radius:100%;
+    position:relative;
+    top: -15px;
+    left:-15px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+  }
+  
+  img#cart {
+    display: inline;
+    width: 22px;
+    height: auto;
+}
+
+nav.verticalNav a img {
+    border-radius: 100%;
+    width: 40px;
+    padding: 5px;
+    height: auto;
+  }
+
+  #confirmOrder{
+    padding-left:600px;
+    padding-top: 30px;
+}
+
+#orderButton{
+    cursor:pointer;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 8px;
+    background-color :lime;
+    border-color:black;
+    border-width: 1px;
+}
+
+#line{
+    padding-left: 550px;
+    color: white;
+}

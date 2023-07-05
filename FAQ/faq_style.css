@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+article {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 237, 232);
+    font-family:monospace,Georgia, 'Times New Roman', Times, serif;
+}
+
+article{
+    background-image: url(faq.jpg);
+    background-repeat: round;
+    justify-content: center;
+    padding:5%;
+    border:2px solid black;
+    overflow: auto;
+}
+
+h1{
+    font-size: xx-large;
+    background-color:paleturquoise;
+    color:rgb(9, 9, 191);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    margin:0% 30%;
+    border:5px double ivory;
+    text-align: center;
+}
+
+article div{
+    font-weight: bold;
+    text-align: left;
+    padding: 3%;
+    border-top: 5px dashed black;
+}
+
+dt{
+    color:black;
+    text-shadow: 1px 1px rgb(43, 195, 226);
+    font-size: x-large;
+}
+
+dd{
+    color:rgb(43, 92, 226);
+    font-size: large;
+    padding: 3%;
+    text-decoration: underline black;
+}

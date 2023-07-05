@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order</title>
+        <link href="order.css" rel="stylesheet">
+        <link href="../navigation/navigation.css" rel="stylesheet">
+        <link href="../footer/footer.css" rel="stylesheet">
+        <link href="../reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="../responsive.css">
+        <script src="../javascript.js"></script>
+    </head>
+    <body>
+        <!--Navigation List-->
+        <div class="horizontalNav" id="horizontalNav">
+            <a href="#" class="logo">
+               <span>
+                The Spaceship<span id="dots">.</span>
+               </span>
+            </a>
+            <div class="NavigationBar" id="nav">
+                <a class="nav" href="../sign-in/sign-in.html">Sign in</a>
+                <a class="nav" href="../booking/booking.html">Booking</a>
+                <a class="nav" href="../event/event.html">Events</a>
+                <a class="nav" href="../promotion/promotion.html">Promotion</a>
+                <a class="nav" href="../order/cartAssignment.html">
+                    <img src="../order/cart.png" alt="cart-icon" id="cart">
+                    <input type="text" id="count" value="0" disabled></input>
+                </a>
+                <a class="nav" href="../menu/menu.html">Menu</a>
+                <a class="nav" href="../about-us/AboutUs.html">About Us</a>
+                <a class="nav" href="../home-page/home.html">Home</a>
+                <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                    <img src="../navigation/nav icon.png">
+                </a>
+            </div>
+        </div>
+
+        <div id="order-section">
+            <button class="reveal">Western</button>
+            <button class="reveal">Japanese</button>
+            <button class="reveal">Dessert</button>
+            <button class="reveal">Beverages</button>
+        </div>
+
+        <div class="item-container">
+            <div class="menu"><br>
+                <img src="spaghetti.jpg" style="width:140px;height:130px">
+                <h4>Spaghetti Carbonara (RM20)</h4>
+                 <button class="order cart1">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="spaghetti.jpg" style="width:140px;height:130px">
+                <h4>Shrimp and Garlic Spaghetti (RM20)</h4>
+                <button class="order cart2">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="spaghetti.jpg" style="width:140px;height:130px">
+                <h4>Spaghetti with Red Sauce (RM20)</h4>
+                <button class="order cart3">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="burger4.jpg" style="width:140px;height:130px">
+                <h4>Signature Chicken Burger (RM20)</h4>
+                <button class="order cart4">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="burger4.jpg" style="width:140px;height:130px">
+                <h4>Signature Pork Burger (RM20)</h4>
+                <button class="order cart5">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="burger" src="burger4.jpg" style="width:140px;height:130px">
+                <h4>Signature Fish Burger (RM20)</h4>
+                <button class="order cart6">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="pizza" src="pizza.jpg" alt="pizza" style="width:140px;height:130px">
+                <h4>Homemade Hawaiian Pizza  (RM20)</h4>
+                <button class="order cart7">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="pizza" src="pizza.jpg" style="width:140px;height:130px"></a>
+                <h4>Crazy Chicken Saurus (RM20)</h4>
+                <button class="order cart8">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="pizza" src="pizza.jpg" alt="pizza" style="width:140px;height:130px">
+                <h4>Smoky Pepperoni Mushroom (RM20)</h4>
+                <button class="order cart9">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="chickenchop" src="menu/western/CHICKEN CHOP.png" alt="Chicken Chop" style="width:140px;height:130px"></a>   
+                <h4>Fried Chicken Chop (RM20)</h4>
+                <button class="order cart10">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img  src="menu/western/CHICKEN CHOP.png" alt="Chicken Chop" style="width:130px;height:130px">
+                <h4>Black Pepper Chicken Chop (RM20)</h4>
+                <button class="order cart11">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="menu/western/CHICKEN CHOP.png" alt="Chicken Chop" style="width:130px;height:130px">
+                <h4>Mushroom Chicken Chop (RM20)</h4>
+                <button class="order cart12">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img  src="menu/western/fish and chip.png" alt="fish" style="width:130px;height:130px">   
+                <h4>Classic Fish And Chips (RM20)</h4>
+                <button class="order cart13">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="menu/western/fish and chip.png" alt="fish" style="width:130px;height:130px">  
+                <h4>Fish and Chips with Mushroom Sauce (RM20)</h4>
+                <button class="order cart14">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img src="menu/western/fish and chip.png" alt="fish" style="width:130px;height:130px">   
+                <h4>Fish n Chips with Black Pepper Sauce (RM20)</h4>
+                <button class="order cart15">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="porkchop" src="menu/western/pork chop.jpg" alt="pork" style="width:130px;height:130px"></a>     
+                <h4>Signature Fried Pork Chop (RM20)</h4>
+                <button class="order cart16">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="porkchop" src="menu/western/pork chop.jpg" alt="pork" style="width:130px;height:130px">   
+                <h4>Signature Grilled Pork Chop (RM20)</h4>
+                <button class="order cart17">Add to Cart</button>
+            </div>
+            <div class="menu">
+                <br>
+                <img id="porkchop" src="menu/western/pork chop.jpg" alt="pork" style="width:130px;height:130px"> 
+                <h4>Black Pepper Pork Chop (RM20)</h4>
+                <button class="order cart18">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="japanese-container">
+            <div class="japanese">
+                <br>
+                <img id="salmonnigiri" src="salmonnigiri.jpg" alt="salmonnigiri" style="width:140px;height:137px">   
+                <h4>Salmon Nigiri (RM20)</h4>
+                <button class="order cart19">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="california" src="californiaroll.jpg" alt="california roll" style="width:140px;height:137px">    
+                <h4>California Roll (RM20)</h4>
+                <button class="order cart20">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="tamago" src="menu/japanese/tamago.webp" alt="tamago" style="width:140px;height:137px">
+                <h4>Tamago(RM20)</h4>
+                <button class="order cart21">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="crabsticksushi" src="menu/japanese/crab stick.webp" alt="crab stick" style="width:140px;height:137px">    
+                <h4>Crab Stick Sushi (RM20)</h4>
+                <button class="order cart22">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="cucumbersushi" src="menu/japanese/cucumber sushi.jpg" alt="cucumbersushi" style="width:140px;height:137px">     
+                <h4>Cucumber Sushi (RM20)</h4>
+                <button class="order cart23">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="ebiko" src="menu/japanese/ebiko.webp" alt="ebiko" style="width:140px;height:137px">
+                <h4>Ebiko(RM20)</h4>
+                <button class="order cart24">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="tempura" src="menu/japanese/tempura sushi.jpg" alt="tempura" style="width:140px;height:137px">     
+                <h4>Tempura <br>(RM20)</h4>
+                <button class="order cart25">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="unagi" src="menu/japanese/unagi.jpg" alt="unagi" style="width:140px;height:137px">     
+                <h4>Unagi Sushi <br>(RM20)</h4>
+                <button class="order cart26">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="inarimentai" src="menu/japanese/inari mentai.jpg" alt="inarimentai" style="width:140px;height:137px">
+                <h4>Inari Mentai <br>(RM20)</h4>
+                <button class="order cart27">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id=salmonsalad src="menu/japanese/salmon salad sushi.jpg" alt="salmon salad" style="width:140px;height:137px">   
+                <h4>Salmon Salad <br>Sushi (RM20)</h4>
+                <button class="order cart28">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="chickenkaraage" src="menu/japanese/chicken karaage salad.jpg" alt="chicken karaage salad" style="width:140px;height:137px">   
+                <h4>Chicken Karage<br> Salad (RM20)</h4>
+                <button class="order cart29">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="yakinikusalad" src="menu/japanese/yakiniku salad.jpg" alt="yakiniku salad" style="width:140px;height:137px">   
+                <h4>Yakiniku <br>(RM20)</h4>
+                <button class="order cart30">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="torikatsu" src="menu/japanese/tori katsu don.webp" alt="tori katsu don" style="width:140px;height:137px">    
+                <h4>Tori Katsu Don <br>(RM14.8)</h4>
+                <button class="order cart31">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="prawnkatsu" src="menu/japanese/prawn catsu curry rice.jpg" alt="prawn katsu don" style="width:140px;height:137px">   
+                <h4>Prawn Katsu Don <br>(RM17.8)</h4>
+                <button class="order cart32">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="chickencurry" src="menu/japanese/chicken curry rice.jpg" alt="chicken curry don" style="width:140px;height:137px">     
+                <h4>Chicken Curry <br> Don (RM15.8)</h4>
+                <button class="order cart33">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="teriyakichicken" src="menu/japanese/terriyaki-rice.jpg" alt="teriyakichicken" style="width:140px;height:137px">     
+                <h4>Teriyaki Chicken <br> Don (RM14.8)</h4>
+                <button class="order cart34">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+                <img id="teriyakisalmon" src="menu/japanese/salmon teriyaki rice.jpg" alt="salmon teriyaki don" style="width:140px;height:137px">     
+                <h4>Teriyaki Salmon <br> Don (RM18.8)</h4>
+                <button class="order cart35">Add to Cart</button>
+            </div>
+            <div class="japanese">
+                <br>
+               <img id="unagidon" src="menu/japanese/unagi don.png" alt="unagi don" style="width:140px;height:137px">  
+               <h4>Unagi Don <br>(RM15.8)</h4>
+                <button class="order cart36">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="dessert-container">
+            <div class="dessert">
+                <br>
+                <img id="chocolateicecream" src="menu/dessert/chocolate ice cream bowl.jpg"alt="choc ice cream" style="width:130px;height:130px">    
+                <h4>Chocolate Ice Cream<br> Bowl (RM10)</h4>
+                <button class="order cart37">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+              <img id="matchaicecream" src="menu/dessert/matcha ice cream bowl.jpg"alt="matcha ice cream" style="width:130px;height:130px">     
+              <h4>Matcha Ice Cream<br>  Bowl (RM10)</h4>
+                <button class="order cart38">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+                <img id="lavendericecream" src="menu/dessert/lavender-blackberry-swirl-ice-cream-FB.jpg"alt="Lavender blackberry icecream" style="width:130px;height:130px">     
+                <h4>Lavender Blackberry <br> Ice Cream Bowl (RM10)</h4>
+                <button class="order cart39">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+                <img id="chocolatebanofee" src="menu/dessert/Chocolate-Banofee.png"alt="Chocolate-Banofee" style="width:130px;height:130px">     
+                <h4>Chocolate Banofee<br>  (RM10)</h4>
+                <button class="order cart40">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+                <img id="matcha" src="menu/dessert/Matcha.png"alt="Matcha Latte" style="width:130px;height:130px">
+                <h4>Matcha Latte <br> (RM20)</h4>
+                <button class="order cart41">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+               <img id="mango" src="menu/dessert/mango yogurt.png"alt="Mango Yogurt" style="width:130px;height:130px">     
+               <h4>Mango Yogurt <br> (RM20)</h4>
+                <button class="order cart42">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+               <img id="blueberry" src="menu/dessert/blueberry gelatin.jpg"alt="blueberry panna cotta" style="width:130px;height:130px">     
+               <h4>Blueberry Panna <br> Cotta (RM10)</h4>
+                <button class="order cart43">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+               <img id="strawberry" src="menu/dessert/strawberry gelatin.jpg"alt="Strawberry panna cotta" style="width:130px;height:130px">    
+               <h4>Strawberry Panna <br> Cotta (RM10)</h4>
+                <button class="order cart44">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+                <img id="mangogelatin" src="menu/dessert/mango-panna-cotta-25208-1.jpeg"alt="Mango panna cotta" style="width:130px;height:130px">     
+                <h4>Mango Panna<br>  Cotta (RM10)</h4>
+                <button class="order cart45">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+                <img id="chocolatecake" src="menu/dessert/chocalate cake.jpg"alt="chocolatecake" style="width:130px;height:130px">     
+                <h4>Chocolate <br> Cake (RM10.5)</h4>
+                <button class="order cart46">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="matchacake" src="menu/dessert/matcha cake.jpg"alt="matchacake" style="width:140px;height:130px">     
+                <h4>Matcha Cake <br>(RM10.5)</h4>
+                <button class="order cart47">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="mangocake" src="menu/dessert/mangocheesecake.png"alt="mangocake" style="width:140px;height:130px">     
+                <h4>Mango Cake <br>(RM10.5)</h4>
+                <button class="order cart48">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="taufufah" src="menu/dessert/Tau-Fu-Fah.jpg"alt="taufufah" style="width:140px;height:130px">    
+                <h4>Tau Fu Fah <br>(RM2.7)</h4>
+                <button class="order cart49">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="oneh" src="menu/dessert/oneh-oneh.png"alt="oneh-oneh" style="width:140px;height:130px">     
+                <h4>Oneh-oneh <br>(RM2.5)</h4>
+                <button class="order cart50">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="kuihlapis" src="menu/dessert/Kuih-Lapis.webp"alt="Kuih-Lapis" style="width:140px;height:130px">  
+                <h4>Kuih Lapis <br>(RM3.5)</h4>
+                <button class="order cart51">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="putart" src="menu/dessert/putart.jpg"alt="Portuguese custard tart" style="width:140px;height:130px">    
+                <h4>Portugese Custard<br> Tart (RM5.5)</h4>
+                <button class="order cart52">Add to Cart</button>
+            </div>
+            <div class="dessert"><br>
+                <img id="eggtart" src="menu/dessert/eggtart.jpg"alt="egg tart" style="width:140px;height:130px">   
+                <h4>Egg Tart <br>(RM5.5)</h4>
+                <button class="order cart53">Add to Cart</button>
+            </div>
+            <div class="dessert">
+                <br>
+               <img id="fruittart" src="menu/dessert/fruittart.jpg"alt="fruit tart" style="width:140px;height:130px">   
+               <h4>Fruit Tart <br>(RM8.5)</h4>
+                <button class="order cart54">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="drink-container">
+            <div class="beverage">
+                <br>
+               <img class="drink" src="menu/beverage/americano.jpg" style="width:130px;height:130px">     
+                <h4>Americano (HOT) <br>(RM11.2) </h4>
+                <button class="order cart55">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/latte.png" style="width:130px;height:130px">     
+               <h4>Latte (HOT) <br>(RM13.2) </h4>
+                <button class="order cart56">Add to Cart</button>
+            </div>
+            <div class="beverage">
+                <br>
+                <img class="drink" src="menu/beverage/mocha.jpg" style="width:130px;height:130px">     
+                <h4>Mocha (HOT) <br>(RM13.5) </h4>
+                <button class="order cart57">Add to Cart</button>
+            </div>
+            <div class="beverage">
+                <br>
+                <img class="drink" src="menu/beverage/cappucino.jpg" style="width:130px;height:130px">     
+                <h4>Capuccino (HOT) <br>(RM13.7) </h4>
+                <button class="order cart58">Add to Cart</button>
+            </div>
+            <div class="beverage">
+                <br>
+                <img class="drink" src="menu/beverage/caramel.jpg" style="width:130px;height:130px">
+                <h4>Caramel Macchiato <br> (HOT) (RM15.2) </h4>
+                <button class="order cart59">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/iceamericano.jpg" style="width:130px;height:130px">     
+                <h4>Americano (COLD) <br>(RM11.2)</h4>
+                <button class="order cart60">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/icedlatte.jpg" style="width:130px;height:130px"> 
+                <h4>Latte (COLD)<br> (RM13.2)</h4>
+                <button class="order cart61">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/icedmocha.png" style="width:130px;height:130px">     
+                <h4>Mocha (COLD) <br>(RM13.5)</h4>
+                <button class="order cart62">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/icedcappucino.jpg" style="width:130px;height:130px">     
+                <h4>Cappucino (COLD) <br>(RM13.7)</h4>
+                <button class="order cart63">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/iced-caramel-macchiato.jpg" style="width:130px;height:130px">     
+               <h4>Caramel Macchiato <br>(COLD) (RM15.2)</h4>
+                <button class="order cart64">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/coke.png" style="width:130px;height:130px">    
+                <h4>Coke (COLD)<br> (RM11.2)</h4>
+                <button class="order cart65">Add to Cart</button>
+            </div>
+            <div class="beverage">
+                <br>
+                <img class="drink" src="menu/beverage/sprite.png" style="width:130px;height:130px">     
+                <h4>Sprite <br> (RM13.2)</h4>
+                <button class="order cart66">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/100plus.jpg" style="width:130px;height:130px">  
+                <h4>100 Plus <br> (RM13.5)</h4>
+                <button class="order cart67">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/fanta.jpg" style="width:130px;height:130px">     
+                <h4>Fanta <br> (RM13.7)</h4>
+                <button class="order cart68">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/sodawater.jpg" style="width:130px;height:130px">     
+                <h4>Soda Water <br> (RM15.2)</h4>
+                <button class="order cart69">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/apple-juice.jpeg" style="width:130px;height:130px">     
+                <h4>Apple Juice <br> (RM11.2)</h4>
+                <button class="order cart70">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/orange-juice.jpg" style="width:130px;height:130px">    
+                <h4>Orange Juice <br> (RM13.2)</h4>
+                <button class="order cart71">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/pineapple-juice.jpg" style="width:130px;height:130px">   
+                <h4>Pineapple Juice <br> (RM13.5)</h4>
+                <button class="order cart72">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/watermelon-juice.png" style="width:130px;height:130px">     
+                <h4>Watermelon Juice <br> (RM13.7)</h4>
+                <button class="order cart73">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/guava-juice.jpg" style="width:130px;height:130px">    
+               <h4>Guava Juice <br> (RM15.2)</h4>
+                <button class="order cart74">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/passion.png" style="width:130px;height:130px">     
+                <h4>Passion Smoothie <br> (RM11.2)</h4>
+                <button class="order cart75">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/grape.jpg" style="width:130px;height:130px">    
+                <h4>Grape Smoothie <br> (RM13.2)</h4>
+                <button class="order cart76">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/mango.jpg" style="width:130px;height:130px">     
+                <h4>Mango Smoothie <br> (RM13.5)</h4>
+                <button class="order cart77">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/peach.jpg" style="width:130px;height:130px">
+                <h4>Peach Smoothie <br>(RM13.7)</h4>
+                <button class="order cart78">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/blueberry.jpg"  style="width:130px;height:130px">     
+                <h4>Blueberry Smoothie<br> (RM15.2)</h4>
+                <button class="order cart79">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/brownsugar.png"  style="width:130px;height:130px">     
+                <h4>Brown Sugar Milk Tea <br>(RM11.2)</h4>
+                <button class="order cart80">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/caramel-milk-tea.jpg"  style="width:130px;height:130px">     
+               <h4>Caramel Milk Tea <br>(RM13.2)</h4>
+                <button class="order cart81">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/taro.jpg"  style="width:130px;height:130px">     
+                <h4>Taro Milk Tea <br>(RM13.5)</h4>
+                <button class="order cart82">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/thai.jpg" style="width:130px;height:130px">   
+               <h4>Thai Milk Tea <br>(RM13.7)</h4>
+                <button class="order cart83">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/pearl.jpg" style="width:130px;height:130px">   
+               <h4>Pearl Milk Tea <br>(RM15.2)</h4>
+                <button class="order cart84">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/jasmine-tea.jpg" style="width:130px;height:130px">    
+                <h4>Jasmine Tea <br>(RM11.2)</h4>
+                <button class="order cart85">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/Oolong-tea.jpg" style="width:130px;height:130px">     
+                <h4>Oolong Tea <br>(RM13.2)</h4>
+                <button class="order cart86">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/lemon-ginger.jpg" style="width:130px;height:130px">     
+                <h4>Lemon Ginger Tea <br>(RM13.5)</h4>
+                <button class="order cart87">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/green-tea.jpg" style="width:130px;height:130px">   
+               <h4>Green Tea <br>(RM13.7)</h4>
+                <button class="order cart88">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/black-tea.jpg" style="width:130px;height:130px">     
+                <h4>Black Tea <br>(RM15.2)</h4>
+                <button class="order cart89">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/margarita.jpg" style="width:130px;height:130px">     
+                <h4>Margarita <br>(RM11.2)</h4>
+                <button class="order cart90">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/martini.jpg" style="width:130px;height:130px">    
+                <h4>Martini <br>(RM13.2)</h4>
+                <button class="order cart91">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/negroni.jpg" style="width:130px;height:130px">   
+               <h4>Negroni <br>(RM13.5)</h4>
+                <button class="order cart92">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+                <img class="drink" src="menu/beverage/daiquiri.jpg" style="width:130px;height:130px">     
+                <h4>Daiquiri <br>(RM13.7)</h4>
+                <button class="order cart93">Add to Cart</button>
+            </div>
+            <div class="beverage"><br>
+               <img class="drink" src="menu/beverage/mojito.jpg" style="width:130px;height:130px">     
+               <h4>Mojito <br>(RM15.2)</h4>
+                <button class="order cart94">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <!--Footer-->
+    <footer>
+        <nav class="verticalNav" id="section1">
+                <h4>Our Restaurant</h4>
+                    <li><a href="../home-page/home.html">Home</a></li>
+                    <li><a href="../about-us/AboutUs.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../event/event.html">Events</a></li>
+                    <li><a href="../booking/booking.html">Booking</a></li>
+                    <li><a href="../review/review.html">Review</a></li>
+                    <li><a href="../FAQ/faq_wp.html">FAQ</a></li>
+                    <li><a href="../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                    <li><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+        </nav>
+
+        <nav class="verticalNav" id="section2">
+            <h4>Our Locations</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+
+        <nav class="verticalNav" id="section3">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                <h4>Contact Us</h4>
+                <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                <p>Website: <a href="#">www.thespaceship.com</a></p>
+                <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+        </nav>
+
+        <nav class="verticalNav" id="section4">
+            <h4>Follow Us</h4>
+                <p><a href="https://www.facebook.com/spacebistro"><img src="../footer/footer-fb.png"></a></p>
+                <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../footer/footer-insta.png"></a></p>
+                <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../footer/footer-twitter.png"></a></p>
+                <p><a href="https://youtube.com/c/AboutToEat"><img src="../footer/footer-youtube.png"></a></p>
+        </nav>
+    </footer>
+        <script src="order.js"></script>
+        <script src="orderSection.js"></script>
+        <script src="../cartNumber.js"></script>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link href="signin_style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../navigation/navigation.css" />
+    <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+    <link rel="stylesheet" href="responsive_design.css" />
+    <script src="../javascript.js"></script>
+    <script src="sign_in.js"></script>
+    <script src="register.js"></script>
+    <title>Sign In & Register</title> 
+</head>
+
+<body>
+    <header>
+       <!--Navigation List-->
+       <div class="horizontalNav" id="horizontalNav">
+        <a href="#" class="logo">
+           <span>
+            The Spaceship<span id="dots">.</span>
+           </span>
+        </a>
+        <div class="NavigationBar" id="nav">
+            <a class="nav" href="../sign-in/sign-in.html">Sign in</a>
+            <a class="nav" href="../booking/booking.html">Booking</a>
+            <a class="nav" href="../event/event.html">Events</a>
+            <a class="nav" href="../promotion/promotion.html">Promotion</a>
+            <a class="nav" href="../order/cartAssignment.html">
+                <img src="../order/cart.png" alt="cart-icon" id="cart">
+                <input type="text" id="count" value="0" disabled></input>
+            </a>
+            <a class="nav" href="../menu/menu.html">Menu</a>
+            <a class="nav" href="../about-us/AboutUs.html">About Us</a>
+            <a class="nav" href="../home-page/home.html">Home</a>
+            <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                <img src="../navigation/nav icon.png">
+            </a>
+        </div>
+    </div>
+    </header>
+
+    <article>
+        <form class="form" id="form1" action="home.html" method="post">
+            <fieldset>
+                <legend>Sign In</legend>
+                <table>
+                    <tr>
+                        <th><label for="name1">Name:</label></th>
+                        <td><input type="text" id="name1" name="name1" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email1">Email:</label></th>
+                        <td><input type="email" id="email1" name="email1" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password">Password: </label></th>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                </table>
+    
+                <p class="btdsignin"><input type="button" name="submit" id="submit" value="Submit" onclick="signin()"/></p>
+    
+                <p class="btdsignin"><input type="reset" id="resetlogin" name="resetlogin" value="Cancel"></p>
+            </fieldset>
+        </form>
+    
+        <form class="form" id="form2" action="feedback.js" method="post">
+            <fieldset>
+                <legend>Membership Registeration</legend>
+                <table>
+                        <tr>
+                            <th><label for="name">Full Name as per NRIC:</label></th>
+                            <td colspan="4"><input type="text" id="name" name="name" required></td>
+                        </tr><br /><br />
+                        <tr>
+                            <th><label for="gender" >Gender:</label></th>
+                            <td colspan="2"><input type="radio" id="male" name="gender"><label for="male" >M</label></td>
+                            <td colspan="2"><input type="radio" id="female" name="gender"><label for="female">F</label></td>
+                        </tr><br /><br />
+                        <tr>
+                            <th><label for="phone">Phone number:</label></th>
+                            <td colspan="4"><input type="tel" id="phone" name="phone_number" pattern="^\d{10}$ ^(1 (\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                            placeholder="(nnn) nnn-nnnn" required></td>
+                        </tr><br /><br />
+                        <tr>
+                            <th><label for="email2">Email:</label></th>
+                            <td colspan="4"><input type="email" id="email" name="email" required></td>
+                        </tr><br /><br />
+                        <tr>
+                            <th>Age:</th>
+                            <td  colspan="4"><input type="radio" id="group1" name="age" value="30"><label for="group1">18-35</label><br>
+                            <input type="radio" id="group2" name="age" value="50"><label for="group2">36-50</label><br>
+                            <input type="radio" id=""group3" name="age" value="65"><label for="group3">51-65</label><br>
+                            <input type="radio" id="group4" name="age" value="100"><label for="group4">66-100</label></td><br>
+                        </tr>
+                        <tr>
+                            <th><label for="birthday">Birth date:</label></th>
+                            <td colspan="4"><input type="date" id="birthday" name="birthday date" max="01-01-1922" max="31-12-2004" required></td>
+                        </tr><br /><br />
+                        <tr> 
+                            <th><label for="street">Address:</label></th>
+                            <td colspan="4"><input type="text" id="street" name="street"/><br/><br />
+                                <input type="text" id="city" name="city"><br /><br />
+                                <input type="text" id="state" name="state"/><br /><br />
+                                <input type="text" id="code" name="code"/><br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Bank:</th>
+                            <td colspan="4"><input type="text" list="bank" name="bank"/>
+                            <datalist id="bank">
+                                <option value="Public Bank" selected/>
+                                <option value="May Bank" />
+                                <option value="RHB Bank" />
+                                <option value="BSN Bank" />
+                                <option value="Hong Leong Bank" />
+                                <option value="Other"/>
+                            </datalist><br><br>
+                            <label for="otherBank">Other:</label><br><input type="text" id="otherBank" name="otherBank"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="bank no.">Bank account no.</label></th>
+                            <td colspan="4"><input type="text" id="bank no." name="bank account no." required></td>
+                        </tr><br/><br />
+                    </table>
+    
+                    <p class="btdsignin"><input type="button" name="submit" id="submit" value="Submit" onclick="register()"/></p>
+                    
+                    <p class="btdsignin"><input type="reset" id="resetmember" name="resetmember" value="Cancel"></p>
+
+                    <p class="btdsignin"><a href="../home-page/home.html" id="homebtd">Back to home</a></p>
+            </fieldset>    
+        </form>
+    </article>
+    
+    <!--Footer-->
+    <footer>
+        <nav class="verticalNav" id="section1">
+                <h4>Our Restaurant</h4>
+                    <li><a href="../home-page/home.html">Home</a></li>
+                    <li><a href="../about-us/AboutUs.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../event/event.html">Events</a></li>
+                    <li><a href="../booking/booking.html">Booking</a></li>
+                    <li><a href="../review/review.html">Review</a></li>
+                    <li><a href="../FAQ/faq_wp.html">FAQ</a></li>
+                    <li><a href="../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                    <li><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+        </nav>
+
+        <nav class="verticalNav" id="section2">
+            <h4>Our Locations</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+
+        <nav class="verticalNav" id="section3">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                <h4>Contact Us</h4>
+                <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                <p>Website: <a href="#">www.thespaceship.com</a></p>
+                <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+        </nav>
+
+        <nav class="verticalNav" id="section4">
+            <h4>Follow Us</h4>
+                <p><a href="https://www.facebook.com/spacebistro"><img src="../footer/footer-fb.png"></a></p>
+                <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../footer/footer-insta.png"></a></p>
+                <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../footer/footer-twitter.png"></a></p>
+                <p><a href="https://youtube.com/c/AboutToEat"><img src="../footer/footer-youtube.png"></a></p>
+        </nav>
+    </footer>
+
+    <script src="../cartNumber.js"></script>
+    
+</body>
+</html>

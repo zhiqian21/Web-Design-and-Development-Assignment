@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 237, 232);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article{
+    width:100%;
+    height: 92%;
+    background-image: url(pagebackground.jpg);
+    background-attachment: fixed;
+    background-repeat: round;
+    justify-content: center;
+    display:flex;
+    flex-flow:row wrap;
+    padding:5% 3%;
+
+}
+
+form{
+    font-size:large;
+    color:rgb(115, 6, 158);
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px white;
+}
+
+fieldset{
+    border:10px solid rgb(2, 153, 240);
+    float:left;
+    display:flex;
+    flex-flow:row wrap;
+    background-attachment:local;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+#form1 fieldset{
+    width:100%;
+    background-image: url(A3.png);
+}
+
+#form2 fieldset{
+    margin-top: 3%;
+    background-image: url(A1.jpg);
+}
+
+legend{
+    color:rgb(9, 9, 191);
+    font-size:x-large;
+    text-align:center;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    background-image: url(A6.jpg);
+    border:5px double ivory;
+}
+
+table{
+    width:100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+th,td{
+    border:3px solid rgb(86, 4, 100);
+}
+
+td{
+    color:rgba(46, 13, 194, 0.964);
+    font-size:large;
+    text-shadow: 0.5px 1px aquamarine;
+    padding: 2%;
+}
+
+p.btdsignin{
+    margin:5%;  
+}
+
+article input, a#homebtd{
+    font-size: large;
+    background-color:pink;
+    padding:5px;
+    margin:3px;
+    float:left;
+}
+
+#form1 th ,#form1 td{
+    padding: 7% 0%;
+}
+
+#homebtd{
+    color:black;
+    text-decoration: none;
+    border:2px solid black;
+    font-weight:400;
+}
+
+input#count {
+    font-size:12px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 192, 91);
+    border-radius:100%;
+    width: 20px;
+    height: 18px;
+    text-align: center;
+  }
+
+  img#cart {
+    display: inline;
+    width: 22px;
+  }
+
+
+  

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link href="../home-page/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <script src="../javascript.js"></script>
+    <script src="booking.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <!--Navigation List-->
+        <div class="horizontalNav" id="horizontalNav">
+            <a href="#" class="logo">
+               <span>
+                The Spaceship<span id="dots">.</span>
+               </span>
+            </a>
+            <div class="NavigationBar" id="nav">
+                <a class="nav" href="../sign-in/sign-in.html">Sign in</a>
+                <a class="nav" href="../booking/booking.html">Booking</a>
+                <a class="nav" href="../event/event.html">Events</a>
+                <a class="nav" href="../promotion/promotion.html">Promotion</a>
+                <a class="nav" href="../order/cartAssignment.html">
+                    <img src="../order/cart.png" alt="cart-icon" id="cart">
+                    <input type="text" id="count" value="0" disabled></input>
+                </a>
+                <a class="nav" href="../menu/menu.html">Menu</a>
+                <a class="nav" href="../about-us/AboutUs.html">About Us</a>
+                <a class="nav" href="../home-page/home.html">Home</a>
+                <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                    <img src="../navigation/nav icon.png">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <h1>Online Reservation Form</h1>
+        <fieldset id="booking">
+
+            <p>Please complete and submit the reservation form to make a reservation</p>
+            <hr>
+            <form action="actionform.html" method="get" onsubmit="return testing()">
+
+                <div>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="First Name" id="fname" name="fname" autofocus required>
+                    <input type="text" placeholder="Last Name" id="lname" name="lname" required>
+                </div>
+
+                <div>
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" placeholder="ex: abc@example.com" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="tel"><b>Contact number</b></label>
+                    <input type="tel" placeholder="ex: 0123456789" id="tel" name="tel" pattern="[0-9]{10,}" title="Please input 10 or more numbers" required>
+                </div>
+
+                <div>
+                    <label for="date"><b>Date of reservation</b></label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <div>
+                    <label for="time"><b>Time of reservation</b></label>
+                    <input type="time" name="time" required>
+                </div>
+
+                <div>
+                    <label for="nopax"><b>Number of diner</b></label>
+                    <input type="number" min="1" max="20" value="1" name="nopax" id="nopax" required>
+                </div>
+
+                <div>
+                    <label for="membership"><b>Membership</b></label>
+                    <input type="radio" id="yes" name="membership" value="yes" checked required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="membership" value="no">
+                    <label for="no">No</label>
+                </div>
+                
+                <div>
+                    <label for="comments"><b>Additional requirements</b></label>
+                    <textarea name="comments" id="comments" placeholder="Please input any additional request (if any)"></textarea><br><br>
+                </div>
+
+                <input type="submit" value="Submit" id="submit"> <br><br>
+                <input type="button" value="Reset" id="reset" onclick="resetform()">
+            </form>
+        </fieldset>
+    </article>
+    <!--Footer-->
+    <footer>
+        <nav class="verticalNav" id="section1">
+                <h4>Our Restaurant</h4>
+                    <li><a href="../home-page/home.html">Home</a></li>
+                    <li><a href="../about-us/AboutUs.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../event/event.html">Events</a></li>
+                    <li><a href="../booking/booking.html">Booking</a></li>
+                    <li><a href="../review/review.html">Review</a></li>
+                    <li><a href="../FAQ/faq_wp.html">FAQ</a></li>
+                    <li><a href="../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                    <li><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+        </nav>
+
+        <nav class="verticalNav" id="section2">
+            <h4>Our Locations</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+
+        <nav class="verticalNav" id="section3">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                <h4>Contact Us</h4>
+                <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                <p>Website: <a href="#">www.thespaceship.com</a></p>
+                <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+        </nav>
+
+        <nav class="verticalNav" id="section4">
+            <h4>Follow Us</h4>
+                <p><a href="https://www.facebook.com/spacebistro"><img src="../footer/footer-fb.png"></a></p>
+                <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../footer/footer-insta.png"></a></p>
+                <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../footer/footer-twitter.png"></a></p>
+                <p><a href="https://youtube.com/c/AboutToEat"><img src="../footer/footer-youtube.png"></a></p>
+        </nav>
+    </footer>
+
+    <script src="../cartNumber.js"></script>
+
+</body>
+</html>

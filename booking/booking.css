@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+article{
+    width: 85%;
+    margin: auto;
+}
+
+fieldset{
+    background-color: wheat;
+}
+
+fieldset p{
+    font-family: cursive;
+}
+
+#comments{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+legend{
+    background-color:gold;
+    color: black;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+input:hover, textarea:hover{
+    background-color: lightcyan;
+}
+
+input#fname:focus:valid, input#lname:focus:valid, input#email:focus:valid, input#tel:focus:valid{
+    background: lightgreen url(check.png) right/contain no-repeat;
+ }
+ 
+input#fname:focus:invalid, input#lname:focus:invalid, input#email:focus:invalid, input#tel:focus:invalid{
+    background: pink url(cross.png) right/contain no-repeat;
+}
+
+article h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px blue;
+    font-size: 200%;
+    color: whitesmoke;
+}
+
+article div, input{
+    margin: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 250px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace, 'Times New Roman', Times, serif, Geneva, Tahoma, Impact, Haettenschweiler, 'Arial Narrow Bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#submit, #reset{
+    border: 2px green solid;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+#submit:hover, #reset:hover{
+    background-color: green;
+}
+
+#reset, #return{
+    border: 2px blue solid;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+#reset:hover, #return:hover{
+    background-color: blue;
+}
+
+#submit:active, #reset:active, #return:active{
+    background-color: deeppink;
+}

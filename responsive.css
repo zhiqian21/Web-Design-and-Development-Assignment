@@ -1,0 +1,148 @@
+
+@media only screen and (min-width: 600px) {
+    #navicon { display: none;}
+    div.resp-table {display: none;}
+  }
+
+@media screen and (max-width: 600px) {
+    /*Responsive Navigation Bar*/
+    .NavigationBar a{display: none;}
+    .NavigationBar a.icon {
+      float: right;
+      display: block;
+      position: absolute;
+      left: 85%;
+    }
+    .NavigationBar.responsive {position: relative;}
+    .NavigationBar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .NavigationBar.responsive a {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .NavigationBar.responsive a:hover {
+        border: none;
+    }
+
+    .logo span { text-align: left;}
+  
+    #navicon img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    /*Responsive Footer*/
+    iframe {
+      width: 150px;
+      height: 150px;
+      padding-left: 10px;
+    }
+  
+    nav.verticalNav#section3{
+      width: 25%;
+      margin-left: 2px;
+    }
+  
+    nav.verticalNav a img {
+      border-radius: 100%;
+    }
+    
+    nav.verticalNav#section4 p {
+      margin-left: 1em;
+    }
+  
+    button.btn-cover { 
+      display: block;
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    /*Responsive About Us*/
+    div.introtext {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    /*Responsive Menu*/
+    .img-map table {
+        margin: 0;
+    }
+
+    div.text {
+        font-size: 1em;
+    }
+
+    /*Responsive Drink page */
+    ul.drink {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .drink li {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    .drink li:nth-of-type(5){
+        clear: left;
+    }  
+
+    div.drink-menu {
+        margin-left: 0;;
+    }
+
+    tr.desc, tr.price {
+        font-size: 0.8em;
+    }
+
+    /*Responsive menu page*/
+      td table.dessert{
+        width: 100%;
+        height: auto;
+      }
+  
+      td table.japanese{
+        width: 100%;
+      }
+  
+      td table.western {
+        width: 100%;
+        height: auto;
+      }
+
+      table.western-menu, table.dessert-menu, table.japanese-menu {
+        display: none;
+      }
+
+      div.resp-table {
+        margin-left: 140px ;
+      }
+
+  }
+
+  @media screen and (max-width:1024px) {
+    td table.dessert{
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    td table.japanese{
+      width: 100%;
+      margin-left: 0;
+    }
+
+    td table.western {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+  }

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+article{
+    width: 85%;
+    margin: auto;
+}
+
+article > h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px blue;
+    color: whitesmoke;
+    font-size: 200%;
+}
+
+fieldset{
+    background-color: pink;
+}
+
+fieldset > h3, fieldset > h4{
+    font-family: cursive;
+}
+
+article > p, article li{
+    line-height: 1.5;
+    word-spacing: 5px;
+    padding: 5px;
+}
+
+article li {
+    list-style: none;
+	padding: 5px 0 5px 20px;
+    background: url(check.png) left no-repeat;
+    background-size: 10px;
+}
+
+fieldset img{
+    width: 125px;
+    height: 100px;
+}
+
+fieldset div{
+    float: right;
+    padding: 10px;
+}
+
+.label{
+    color: blue;
+}
+
+fieldset a{
+    color: blue;
+    text-decoration: underline;
+}
+fieldset a:hover{
+    color: purple;
+    text-decoration: none;
+}

@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="../navigation/navigation.css">
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="stylesheet" href="../menu/menu.css">
+        <link rel="stylesheet" href="../responsive.css">
+        <script src="../javascript.js"></script>
+    </head>
+
+    <body>
+
+      <header>
+          <!--Navigation List-->
+        <div class="horizontalNav" id="horizontalNav">
+            <a href="#" class="logo">
+               <span>
+                The Spaceship<span id="dots">.</span>
+               </span>
+            </a>
+            <div class="NavigationBar" id="nav">
+                <a class="nav" href="../sign-in/sign-in.html">Sign in</a>
+                <a class="nav" href="../booking/booking.html">Booking</a>
+                <a class="nav" href="../event/event.html">Events</a>
+                <a class="nav" href="../promotion/promotion.html">Promotion</a>
+                <a class="nav" href="../order/cartAssignment.html">
+                    <img src="../order/cart.png" alt="cart-icon" id="cart">
+                    <input type="text" id="count" value="0" disabled></input>
+                </a>
+                <a class="nav" href="../menu/menu.html">Menu</a>
+                <a class="nav" href="../about-us/AboutUs.html">About Us</a>
+                <a class="nav" href="../home-page/home.html">Home</a>
+                <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                    <img src="../navigation/nav icon.png">
+                </a>
+            </div>
+        </div>
+      </header>
+
+      <!--Content-->
+      <div class="img-map">
+
+        <table>
+            <tr>
+                <td>
+                    <div class="western">
+                        <img src="western-cover.jpg" usemap="#western">
+                        <map name="western">
+                            <area shape="default" coords="0,0,1125,2000" href="../menu/western/western.html" />
+                        </map>
+
+                        <div class="overlay" id="western">
+                            <div class="text">Western</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="japanese">
+                        <img src="japanese-cover.jpg" usemap="#japanese">
+                        <map name="japanese">
+                            <area shape="default" coords="0,0,1014,1803" href="../menu/japanese/japanese.html" />
+                        </map>
+
+                        <div class="overlay" id="japanese">
+                            <div class="text">Japanese</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dessert">
+                        <img src="dessert-cover.jpg" usemap="#dessert">
+                        <map name="dessert">
+                            <area shape="default" coords="0,0,394,700" href="../menu/dessert/dessert.html" />
+                        </map>
+
+                        <div class="overlay" id="dessert">
+                            <div class="text">Dessert</div>
+                        </div>
+                    </div>
+                </td> 
+                <td>
+                    <div class="drinks">
+                        <img src="drinks-cover.jpg" usemap="#drinks">
+                        <map name="drinks">
+                            <area shape="default" coords="0,0,900,1600" href="../menu/drink/drink.html" />
+                        </map>
+
+                        <div class="overlay" id="drinks">
+                            <div class="text">Drinks</div>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <nav class="verticalNav" id="section1">
+                <h4>Our Restaurant</h4>
+                    <li><a href="../home-page/home.html">Home</a></li>
+                    <li><a href="../about-us/AboutUs.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../event/event.html">Events</a></li>
+                    <li><a href="../booking/booking.html">Booking</a></li>
+                    <li><a href="../review/review.html">Review</a></li>
+                    <li><a href="../FAQ/faq_wp.html">FAQ</a></li>
+                    <li><a href="../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                    <li><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+        </nav>
+
+        <nav class="verticalNav" id="section2">
+            <h4>Our Locations</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+
+        <nav class="verticalNav" id="section3">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                <h4>Contact Us</h4>
+                <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                <p>Website: <a href="#">www.thespaceship.com</a></p>
+                <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+        </nav>
+
+        <nav class="verticalNav" id="section4">
+            <h4>Follow Us</h4>
+                <p><a href="https://www.facebook.com/spacebistro"><img src="../footer/footer-fb.png"></a></p>
+                <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../footer/footer-insta.png"></a></p>
+                <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../footer/footer-twitter.png"></a></p>
+                <p><a href="https://youtube.com/c/AboutToEat"><img src="../footer/footer-youtube.png"></a></p>
+        </nav>
+    </footer>
+
+    <script src="../cartNumber.js"></script>
+
+    </body>
+</html>

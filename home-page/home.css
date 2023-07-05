@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+/* Body Styles */
+body {
+	margin: auto;
+  background-image: url('front-cover.jpg');
+  background-position: center center;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  height: 100%;
+}
+
+img#covericon {
+  width: 250px;
+  display: block;
+  margin: 0px auto;
+}
+
+div.content {
+  padding: 0;
+}
+
+.content p {
+  font-size: 3.5em;
+  color: rgb(255, 183, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  text-align: center;
+  text-shadow: black 5px -5px 3px;
+  transform: scale(1,1) translateY(0px);
+  transition: all 3.0s;
+}
+
+/*cover style*/
+.btn-cover {
+  text-align: center;
+  padding: 40px 0 40px 0;
+}
+
+.btn-cover button {
+  height: 60px;
+  border-radius: 10px;
+  border: 0px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.592);
+  font-size: 1.2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+button a {
+  color: rgb(254, 173, 0);
+  text-shadow: rgba(0, 0, 0, 0.801) 1px -1px 1px;
+  transform: scale(1,1) translateY(0px);
+  transition: all 1.0s;
+}
+
+button a:hover {
+  color: rgb(255, 173, 0);
+  text-shadow: rgba(63, 63, 63, 0.178) 0px 10px;
+  transform: scale(2,2) translateY(-3px);
+}
+
+button#menu {
+  margin-right: 10%;
+}
+

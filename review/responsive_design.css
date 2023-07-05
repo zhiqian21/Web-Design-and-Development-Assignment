@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@media screen  and (min-width:600px) {
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+article{
+    height: 92%;
+    padding:10% 5%;
+}
+
+
+#form2 fieldset{
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+table#feedback{
+    margin-top:45%;
+}
+
+article#feedback{
+    background-repeat: repeat;
+}
+
+article#faq{
+    margin:0% 20%;
+    margin-top:3%;
+}
+
+article{
+    font-size: larger;
+}
+}

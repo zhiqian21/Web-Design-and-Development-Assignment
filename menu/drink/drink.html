@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drinks Menu</title>
+        <link rel="stylesheet" href="../../reset.css">
+        <link rel="stylesheet" href="drink.css">
+        <link href="../../navigation/navigation.css" rel="stylesheet" />
+        <link href="../../footer/footer.css" rel="stylesheet" />
+        <link href="../../responsive.css" rel="stylesheet" />
+        <script src="../../javascript.js"></script>
+    </head>
+
+    <body>
+             <!--Navigation List-->
+        <div class="horizontalNav" id="horizontalNav">
+            <a href="#" class="logo">
+               <span>
+                The Spaceship<span id="dots">.</span>
+               </span>
+            </a>
+            <div class="NavigationBar" id="nav">
+                <a class="nav" href="../../sign-in/sign-in.html">Sign in</a>
+                <a class="nav" href="../../booking/booking.html">Booking</a>
+                <a class="nav" href="../../event/event.html">Events</a>
+                <a class="nav" href="../../promotion/promotion.html">Promotion</a>
+                <a class="nav" href="../../order/cartAssignment.html">
+                    <img src="../../order/cart.png" alt="cart-icon" id="cart">
+                    <input type="text" id="count" value="0" disabled></input>
+                </a>
+                <a class="nav" href="../../menu/menu.html">Menu</a>
+                <a class="nav" href="../../about-us/AboutUs.html">About Us</a>
+                <a class="nav" href="../../home-page/home.html">Home</a>
+                <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                    <img src="../../navigation/nav icon.png">
+                </a>
+            </div>
+        </div>
+            <h1>The Spaceship Cafe</h1>
+            <h2>Drinks</h2>
+        <div class="drink-menu"> 
+            <ul class="drink">
+                <li>
+                    <a href="#coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="#softdrinks">Soft Drinks</a>
+                </li>
+                <li>
+                    <a href="#juice">Fruit Juice</a>
+                </li>
+                <li>
+                    <a href="#smoothie">Smoothie</a>
+                </li>
+                <li>
+                    <a href="#milktea">Milktea</a>
+                </li>
+                <li>
+                    <a href="#tea">Tea</a>
+                </li>
+                <li>
+                    <a href="#cocktails">CockTails</a>
+                </li>
+            </ul>
+    
+            <br/><br/>
+            <h3 id="coffee">Coffee</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/americano.jpg"></td>
+                        <td><img class="drink" src="drink-menu/latte.png"></td>
+                        <td><img class="drink" src="drink-menu/mocha.jpg"></td>
+                        <td><img class="drink" src="drink-menu/cappucino.jpg"></td>
+                        <td><img class="drink" src="drink-menu/caramel.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Americano (HOT) </td>
+                        <td>Latte (HOT) </td>
+                        <td>Mocha (HOT) </td>
+                        <td>Cappucino (HOT) </td>
+                        <td>Caramel Macchiato (HOT) </td>
+                    </tr>
+
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/iceamericano.jpg"></td>
+                        <td><img class="drink" src="drink-menu/icedlatte.jpg"></td>
+                        <td><img class="drink" src="drink-menu/icedmocha.png"></td>
+                        <td><img class="drink" src="drink-menu/icedcappucino.jpg"></td>
+                        <td><img class="drink" src="drink-menu/iced-caramel-macchiato.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Americano (COLD) </td>
+                        <td>Latte (COLD) </td>
+                        <td>Mocha (COLD) </td>
+                        <td>Cappucino (COLD) </td>
+                        <td>Caramel Macchiato (COLD) </td>
+                    </tr>
+
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <h3 id="softdrinks">Soft Drinks</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/coke.png"></td>
+                        <td><img class="drink" src="drink-menu/sprite.png"></td>
+                        <td><img class="drink" src="drink-menu/100plus.jpg"></td>
+                        <td><img class="drink" src="drink-menu/fanta.jpg"></td>
+                        <td><img class="drink" src="drink-menu/sodawater.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Coke </td>
+                        <td>Sprite </td>
+                        <td>100 Plus </td>
+                        <td>Fanta </td>
+                        <td>Soda Water </td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <br/>
+            <h3 id="juice">Fruit Juices</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/apple-juice.jpeg"></td>
+                        <td><img class="drink" src="drink-menu/orange-juice.jpg"></td>
+                        <td><img class="drink" src="drink-menu/pineapple-juice.jpg"></td>
+                        <td><img class="drink" src="drink-menu/watermelon-juice.png"></td>
+                        <td><img class="drink" src="drink-menu/guava-juice.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Apple Juice</td>
+                        <td>Orange Juice</td>
+                        <td>PineappleJuice</td>
+                        <td>Watermelon Juice</td>
+                        <td>Guava Juice</td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <h3 id="smoothie">Smoothie</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/passion.png"></td>
+                        <td><img class="drink" src="drink-menu/grape.jpg"></td>
+                        <td><img class="drink" src="drink-menu/mango.jpg"></td>
+                        <td><img class="drink" src="drink-menu/peach.jpg"></td>
+                        <td><img class="drink" src="drink-menu/blueberry.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Passion Fruit</td>
+                        <td>Grape</td>
+                        <td>Mango</td>
+                        <td>Peach</td>
+                        <td>Blueberry</td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <br/>
+            <h3 id="milktea">Milktea</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/brownsugar.png"></td>
+                        <td><img class="drink" src="drink-menu/caramel-milk-tea.jpg"></td>
+                        <td><img class="drink" src="drink-menu/taro.jpg"></td>
+                        <td><img class="drink" src="drink-menu/thai.jpg"></td>
+                        <td><img class="drink" src="drink-menu/pearl.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Brown Sugar Milk Tea</td>
+                        <td>Caramel Milk Tea</td>
+                        <td>Taro Milk Tea</td>
+                        <td>Thai Milk Tea</td>
+                        <td>Pearl Milk Tea</td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br/>
+            <h3 id="tea">Tea</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/jasmine-tea.jpg"></td>
+                        <td><img class="drink" src="drink-menu/Oolong-tea.jpg"></td>
+                        <td><img class="drink" src="drink-menu/lemon-ginger.jpg"></td>
+                        <td><img class="drink" src="drink-menu/green-tea.jpg"></td>
+                        <td><img class="drink" src="drink-menu/black-tea.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Jasmine Tea</td>
+                        <td>Oolong Tea</td>
+                        <td>Lemon & Ginger Tea</td>
+                        <td>Green Tea</td>
+                        <td>Black Tea</td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br/>
+            <h3 id="cocktails">Cocktails</h3>
+            <div>
+                <table>
+                    <tr class="img">
+                        <td><img class="drink" src="drink-menu/margarita.jpg"></td>
+                        <td><img class="drink" src="drink-menu/martini.jpg"></td>
+                        <td><img class="drink" src="drink-menu/negroni.jpg"></td>
+                        <td><img class="drink" src="drink-menu/daiquiri.jpg"></td>
+                        <td><img class="drink" src="drink-menu/mojito.jpg"></td>
+                    </tr>
+    
+                    <tr class="desc">
+                        <td>Margarita</td>
+                        <td>Martini</td>
+                        <td>Negroni</td>
+                        <td>Daiquiri</td>
+                        <td>Mojito</td>
+                    </tr>
+                    <tr class="price">
+                        <td>RM 11.20</td>
+                        <td>RM 13.20</td>
+                        <td>RM 13.50</td>
+                        <td>RM 13.70</td>
+                        <td>RM 15.20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <nav class="verticalNav" id="section1">
+                    <h4>Our Restaurant</h4>
+                        <li><a href="../../home-page/home.html">Home</a></li>
+                        <li><a href="../../about-us/AboutUs.html">About Us</a></li>
+                        <li><a href="../menu.html">Menu</a></li>
+                        <li><a href="../../event/event.html">Events</a></li>
+                        <li><a href="../../booking/booking.html">Booking</a></li>
+                        <li><a href="../../review/review.html">Review</a></li>
+                        <li><a href="../../FAQ/faq_wp.html">FAQ</a></li>
+                        <li><a href="../../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                        <li><a href="../../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+            </nav>
+
+            <nav class="verticalNav" id="section2">
+                <h4>Our Locations</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </nav>
+
+            <nav class="verticalNav" id="section3">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                    <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                    <h4>Contact Us</h4>
+                    <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                    <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                    <p>Website: <a href="#">www.thespaceship.com</a></p>
+                    <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+            </nav>
+
+            <nav class="verticalNav" id="section4">
+                <h4>Follow Us</h4>
+                    <p><a href="https://www.facebook.com/spacebistro"><img src="../../footer/footer-fb.png"></a></p>
+                    <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../../footer/footer-insta.png"></a></p>
+                    <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../../footer/footer-twitter.png"></a></p>
+                    <p><a href="https://youtube.com/c/AboutToEat"><img src="../../footer/footer-youtube.png"></a></p>
+            </nav>
+        </footer>
+
+        <script src="../../cartNumber.js"></script>
+
+    </body>
+</html>

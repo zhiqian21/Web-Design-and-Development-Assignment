@@ -1,0 +1,62 @@
+body {
+    backdrop-filter: blur(6px);
+    padding: 0 0;
+    margin: 0 0;
+}
+
+h2#heading {
+    color: white;
+}
+
+.intro {
+    background-color: rgb(241, 237, 232);
+}
+
+video#intro {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3%;
+}
+
+.introtext{
+    font-size: 20px;
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    left: 55%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introtext h3 {
+    letter-spacing: 5px;
+}
+
+.introtext p {
+    line-height: 20px;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.intro-img table {
+    padding: 25px 0;
+}
+
+.intro-img table td {
+    padding: 0 5px;
+    width: 20%;
+}
+
+.intro-img img {
+    box-shadow: 7px 7px rgb(208, 194, 153);
+}
+
+.intro-img img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}

@@ -1,0 +1,82 @@
+body {
+    padding: 0 0;
+    margin: 0 0;
+    background-image:url('drink-menu/drinks.jpg');
+    background-size:cover;
+}
+h1{ text-align: center;
+    font-size:70px;
+    font-style:italic;
+    color:black;
+    padding-top:50px;
+    }
+h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size:40px;
+    color:antiquewhite;
+   
+}
+
+.drink-menu {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+ul.drink {
+    margin-left: 4%;
+    text-align: center;
+}
+
+ul.drink li {
+    float: left;
+    display: block;
+    width: 13%;
+    max-width: 13%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li a {
+    color: brown;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
+
+h3#coffee {
+    clear: left;
+}
+
+table {
+    width: 100%;
+}
+
+table img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 10px 10px rgb(223, 179, 121);;
+    margin: 15px 0;
+}
+
+td {
+    width: 20%;
+    text-align: center;
+}
+
+tr.desc td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
+    color:blue;
+}
+
+tr.price td{
+    padding-bottom: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    font-weight: bold;
+}
+

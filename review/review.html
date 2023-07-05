@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Review</title>
+    <link href="feedback_style.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="responsive_design.css">
+    <link rel="stylesheet" href="../reset.css">
+    <script src="../javascript.js"></script>
+    <script src="feedback.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Navigation List-->
+        <div class="horizontalNav" id="horizontalNav">
+            <a href="#" class="logo">
+               <span>
+                The Spaceship<span id="dots">.</span>
+               </span>
+            </a>
+            <div class="NavigationBar" id="nav">
+                <a class="nav" href="../sign-in/sign-in.html">Sign in</a>
+                <a class="nav" href="../booking/booking.html">Booking</a>
+                <a class="nav" href="../event/event.html">Events</a>
+                <a class="nav" href="../promotion/promotion.html">Promotion</a>
+                <a class="nav" href="../order/cartAssignment.html">
+                    <img src="../order/cart.png" alt="cart-icon" id="cart">
+                    <input type="text" id="count" value="0" disabled></input>
+                </a>
+                <a class="nav" href="../menu/menu.html">Menu</a>
+                <a class="nav" href="../about-us/AboutUs.html">About Us</a>
+                <a class="nav" href="../home-page/home.html">Home</a>
+                <a  class="icon" id="navicon" href="#"  onclick="myFunction()">
+                    <img src="../navigation/nav icon.png">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <article id="feedback">
+        <form action="faq_wp.html" id="js" method="post">
+            <fieldset>
+                <legend>Customer Feedback:</legend><br>
+                <h1 class="font">[ 1(Very bad)&nbsp;2(Bad)&nbsp;3(Good)&nbsp;4(Very good)&nbsp;5(Excellent) ]</h1>
+                <table id="feedback">
+                    <tr>
+                        <td>Q1.</td>
+                        <th><label for="q1" >How would you rate the quality of our food?</label></th>
+                        <td colspan="5"><input type="radio" id="1.1" name="q1"><br><label for="1.1">1</label></td>
+                        <td><input type="radio" id="1.2" name="q1"><br><label for="1.2">2</label></td>
+                        <td><input type="radio" id="1.3" name="q1"><br><label for="1.3">3</label></td>
+                        <td><input type="radio" id="1.4" name="q1"><br><label for="1.4">4</label></td>
+                        <td><input type="radio" id="1.5" name="q1"><br><label for="1.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q2.</td>
+                        <th><label for="q2" >How was the speed of service?</label></th>
+                        <td colspan="5"><input type="radio" id="2.1" name="q2"><br><label for="2.1">1</label></td>
+                        <td><input type="radio" id="2.2" name="q2"><br><label for="2.2">2</label></td>
+                        <td><input type="radio" id="2.3" name="q2"><br><label for="2.3">3</label></td>
+                        <td><input type="radio" id="2.4" name="q2"><br><label for="2.4">4</label></td>
+                        <td><input type="radio" id="2.5" name="q2"><br><label for="2.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q3.</td>
+                        <th><label for="q3" >In your opppnion ,is our menu varied enough to satisfy every preference?</label></th>
+                        <td colspan="5"><input type="radio" id="3.1" name="q3"><br><label for="3.1">1</label></td>
+                        <td><input type="radio" id="3.2" name="q3"><br><label for="3.2">2</label></td>
+                        <td><input type="radio" id="3.3" name="q3"><br><label for="3.3">3</label></td>
+                        <td><input type="radio" id="3.4" name="q3"><br><label for="3.4">4</label></td>
+                        <td><input type="radio" id="3.5" name="q3"><br><label for="3.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q4.</td>
+                        <th><label for="q4" >Was the staff friendly and welcoming?</label></th>
+                        <td colspan="5"><input type="radio" id="4.1" name="q4"><br><label for="4.1">1</label></td>
+                        <td><input type="radio" id="4.2" name="q4"><br><label for="4.2">2</label></td>
+                        <td><input type="radio" id="4.3" name="q4"><br><label for="4.3">3</label></td>
+                        <td><input type="radio" id="4.4" name="q4"><br><label for="4.4">4</label></td>
+                        <td><input type="radio" id="4.5" name="q4"><br><label for="4.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q5.</td>
+                        <th><label for="q5" >How was the functionality of our facitilities?</label></th>
+                        <td colspan="5"><input type="radio" id="5.1" name="q5"><br><label for="5.1">1</label></td>
+                        <td><input type="radio" id="5.2" name="q5"><br><label for="5.2">2</label></td>
+                        <td><input type="radio" id="5.3" name="q5"><br><label for="5.3">3</label></td>
+                        <td><input type="radio" id="5.4" name="q5"><br><label for="5.4">4</label></td>
+                        <td><input type="radio" id="5.5" name="q5"><br><label for="5.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q6.</td>
+                        <th><label for="q6" >How would you rate the cleanliness of our restaurant?</label></th>
+                        <td colspan="5"><input type="radio" id="6.1" name="q6"><br><label for="6.1">1</label></td>
+                        <td><input type="radio" id="6.2" name="q6"><br><label for="6.2">2</label></td>
+                        <td><input type="radio" id="6.3" name="q6"><br><label for="6.3">3</label></td>
+                        <td><input type="radio" id="6.4" name="q6"><br><label for="6.4">4</label></td>
+                        <td><input type="radio" id="6.5" name="q6"><br><label for="6.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q7.</td>
+                        <th><label for="q7">Was our website user-friendly?</label></th>
+                        <td colspan="5"><input type="radio" id="7.1" name="q7"><br><label for="7.1">1</label></td>
+                        <td><input type="radio" id="7.2" name="q7"><br><label for="7.2">2</label></td>
+                        <td><input type="radio" id="7.3" name="q7"><br><label for="7.3">3</label></td>
+                        <td><input type="radio" id="7.4" name="q7"><br><label for="7.4">4</label></td>
+                        <td><input type="radio" id="7.5" name="q7"><br><label for="7.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q8.</td>
+                        <th><label for="q8" >What do you think of the ambience of our restaurant?</label></th>
+                        <td colspan="5"><input type="radio" id="8.1" name="q8"><br><label for="8.1">1</label></td>
+                        <td><input type="radio" id="8.2" name="q8"><br><label for="8.2">2</label></td>
+                        <td><input type="radio" id="8.3" name="q8"><br><label for="8.3">3</label></td>
+                        <td><input type="radio" id="8.4" name="q8"><br><label for="8.4">4</label></td>
+                        <td><input type="radio" id="8.5" name="q8"><br><label for="8.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q9.</td>
+                        <th><label for="q9" >Were you satisfied with the onlie ordering experience on our website?</label></th>
+                        <td colspan="5"><input type="radio" id="9.1" name="q9"><br><label for="9.1">1</label></td>
+                        <td><input type="radio" id="9.2" name="q9"><br><label for="9.2">2</label></td>
+                        <td><input type="radio" id="9.3" name="q9"><br><label for="9.3">3</label></td>
+                        <td><input type="radio" id="9.4" name="q9"><br><label for="9.4">4</label></td>
+                        <td><input type="radio" id="9.5" name="q9"><br><label for="9.5">5</label></td>
+                    </tr><br /><br />
+                    <tr>
+                        <td>Q10.</td>
+                        <th><label for="q10" >How likely is it that you will recommend our restaurant to a friend or family member?</label></th>
+                        <td colspan="5"><input type="radio" id="10.1" name="q10"><br><label for="10.1">1</label></td>
+                        <td><input type="radio" id="10.2" name="q10"><br><label for="10.2">2</label></td>
+                        <td><input type="radio" id="10.3" name="q10"><br><label for="10.3">3</label></td>
+                        <td><input type="radio" id="10.4" name="q10"><br><label for="10.4">4</label></td>
+                        <td><input type="radio" id="10.5" name="q10"><br><label for="10.5">5</label></td>
+                    </tr><br /><br />
+                </table>
+                
+                <p><label for="review" id="review">Review:</label></p>
+                
+                <textarea type="text" id="reviewtextbox" name="review" rows="20" cols="110" placeholder="Is there anything we can do to motivate you to visit us more often?"></textarea>
+                
+                <p class="btdsignin"><input type="button" name="submit" id="submit" value="Submit" onclick="feedback()"/></p>
+
+                <p class="btdsignin"><input type="reset" id="resetmember" name="resetmember" value="Cancel"></p>
+                
+            </fieldset>
+            </form>
+    </article>
+
+     <!--Footer-->
+     <footer>
+        <nav class="verticalNav" id="section1">
+                <h4>Our Restaurant</h4>
+                    <li><a href="../home-page/home.html">Home</a></li>
+                    <li><a href="../about-us/AboutUs.html">About Us</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../event/event.html">Events</a></li>
+                    <li><a href="../booking/booking.html">Booking</a></li>
+                    <li><a href="../review/review.html">Review</a></li>
+                    <li><a href="../FAQ/faq_wp.html">FAQ</a></li>
+                    <li><a href="../terms-n-condition/terms-n-conditions.html">Terms & Condition</a></li>
+                    <li><a href="../privacy-policy/privacy-policy.html">Privacy Policy</a></li>
+        </nav>
+
+        <nav class="verticalNav" id="section2">
+            <h4>Our Locations</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039685.6922888549!2d99.63951110000004!3d3.157563400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37fcc2f11a41%3A0x85d32d5b06ac95ef!2sSpaceship%201!5e0!3m2!1sen!2smy!4v1661422958946!5m2!1sen!2smy" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+
+        <nav class="verticalNav" id="section3">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday     : 9.00 a.m. - 11.00 p.m.</p>
+                <p>Saturday & Sunday   : 10.00 a.m. - 11.00 p.m.</p>
+
+                <h4>Contact Us</h4>
+                <p>Phone: <a href="tel:0390167793">03-90167793</a></p>
+                <p>E-mail: <a href="mailto:thespaceship@example.com">thespaceship@gmail.com</a></p>
+                <p>Website: <a href="#">www.thespaceship.com</a></p>
+                <p>Location: 41, Lorong Dedalu, Batu 4 1/2, Jln Ampang, 55000 Kuala Lumpur</p>
+        </nav>
+
+        <nav class="verticalNav" id="section4">
+            <h4>Follow Us</h4>
+                <p><a href="https://www.facebook.com/spacebistro"><img src="../footer/footer-fb.png"></a></p>
+                <p><a href="https://instagram.com/sg.spaceship?igshid=YmMyMTA2M2Y="><img src="../footer/footer-insta.png"></a></p>
+                <p><a href="https://twitter.com/TheSpaceshipCo?t=gSOnCmzJeREAsUCOn24tSw&s=09"><img src="../footer/footer-twitter.png"></a></p>
+                <p><a href="https://youtube.com/c/AboutToEat"><img src="../footer/footer-youtube.png"></a></p>
+        </nav>
+    </footer>
+
+    <script src="../cartNumber.js"></script>
+    
+</body>
+</html>

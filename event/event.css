@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body{
+    margin: auto;
+    padding: auto;
+}
+
+article{
+    width: 85%;
+    margin: auto;
+}
+
+article p{
+    line-height: 1.5;
+    word-spacing: 5px;
+    padding: 5px;
+}
+
+fieldset > h3, fieldset > h4{
+    font-family: cursive;
+}
+
+article > h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px blue;
+    color: whitesmoke;
+    font-size: 200%;
+}
+
+.events > h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.events > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+fieldset{
+    background-color: wheat;
+}
+
+#poster{
+    width: 90%;
+    float: right;
+}
+
+#opening {
+	float: right;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 15px 0 0;
+	width: 250px;
+	font-size: 0.9em;
+}
+
+#opening img{
+    float: right;
+}
+
+.design{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+
+div.events{
+    width: 210px;
+    height: 250px;
+    background-color: rgb(255, 195, 77);
+    float: left;
+    border: 1.5px red solid;
+    margin: 10px;
+}
+
+div.events h1{
+    background-color: rgb(204, 68, 0);
+}
+
+.dessert{
+    padding-left: 20%;
+    width: 125px;
+}
+
+article li {
+    list-style: none;
+	padding: 5px 0 5px 20px;
+    background: url(check.png) left no-repeat;
+    background-size: 10px;
+}
+
+aside{
+    float: right;
+    background-color: gold;
+    margin: 10px;
+    padding: 5px;
+    border: 1px red solid;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: purple;
+    text-decoration: none;
+}
+
+table{
+    text-align: center;
+    border: 15px outset blue;
+    margin: auto;
+    font-family: cursive;
+    width: 95%;
+}
+
+th{
+    background-color: lightgreen;
+    border: 2px solid red;
+}
+
+td{
+    background-color: lightblue;
+    border: green 2px solid;
+}
+
+tfoot td{
+    background-color: brown;
+    color: white;
+}
+
+tbody th{
+    color: purple;
+}
+
+caption{
+    caption-side: bottom;
+}
